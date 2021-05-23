@@ -2,7 +2,7 @@
 
 import javax.validation.constraints.NotEmpty;
 
-public class ShainFrom{
+public class ShainForm{
 //		空の場合messageを返す
 	 	@NotEmpty(message = "社員Noを入れてください")
 	 	

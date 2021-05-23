@@ -9,10 +9,10 @@
 <body>
   <h1>NoDiパターン</h1>
   <!-- thタグはthymeleafなのでデザインを崩さない -->
-  <form method="POST" action="output.html" th:action="@{output}" th:object="${ShainFrom}">
+  <form method="POST" action="output.html" th:action="@{output}" th:object="${shainForm}">
     <p>社員NOを入れてください（3桁の半角数字)</p>
-    <input type="text" name="number" th:field="${ShainFrom.number}">
-    <p style="color: red;" th:errors="${ShainFrom.number}" class="error">社員Noを入れてください</p>
+    <input type="text" name="number" th:field="${shainForm.number}">
+    <p style="color: red;" th:errors="${shainFrom.number}" class="error">社員Noを入れてください</p>
     <input type="submit" value="送信">
   </form>
 </body>
